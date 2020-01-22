@@ -32,7 +32,7 @@ public void mousePressed()
 		fill((float)(Math.random() * 255), (float)(Math.random() * 255), (float)(Math.random() * 255));
 		sierpinski(mouseX - (a / 2), mouseY + (a / 2), a);
 	if(mouseButton == RIGHT)
-		background(255, 255, 255);
+		background(0);
 }
 
 public void sierpinski(int x, int y, int len) 
