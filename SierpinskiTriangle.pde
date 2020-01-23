@@ -27,7 +27,7 @@ public void keyPressed()
 
 public void mousePressed()
 {
-	int a = 500;
+	int a = 100;
 	if(mouseButton == LEFT)
 		fill((float)(Math.random() * 255), (float)(Math.random() * 255), (float)(Math.random() * 255));
 		sierpinski(mouseX - (a / 2), mouseY + (a / 2), a);
