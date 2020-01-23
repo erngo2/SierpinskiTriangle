@@ -9,9 +9,13 @@ public void draw()
 {	
 }
 
+int a = 50;
 public void mouseDragged()//optional
 {
-
+	if(mouseButton == LEFT){
+		fill((float)(Math.random() * 255), (float)(Math.random() * 255), (float)(Math.random() * 255));
+		sierpinski(mouseX - (a / 2), mouseY + (a / 2), a);
+	}
 }
 
 int b = 0;
@@ -27,10 +31,10 @@ public void keyPressed()
 
 public void mousePressed()
 {
-	int a = 100;
-	if(mouseButton == LEFT)
+	if(mouseButton == LEFT){
 		fill((float)(Math.random() * 255), (float)(Math.random() * 255), (float)(Math.random() * 255));
 		sierpinski(mouseX - (a / 2), mouseY + (a / 2), a);
+	}
 	if(mouseButton == RIGHT)
 		background(0);
 }
